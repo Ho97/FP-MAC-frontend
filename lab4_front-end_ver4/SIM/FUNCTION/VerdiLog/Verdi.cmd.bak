@@ -1,0 +1,8 @@
+debImport "-ssf" "fp_mac.fsdb"
+debLoadSimResult /home/capstone9/capstone/lab4_front-end/SIM/FUNCTION/fp_mac.fsdb
+wvCreateWindow
+verdiDockWidgetDisplay -dock widgetDock_WelcomePage
+verdiDockWidgetHide -dock widgetDock_WelcomePage
+wvSetCursor -win $_nWave2 58.890550
+wvGetSignalOpen -win $_nWave2
+debExit

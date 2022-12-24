@@ -1,0 +1,159 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP4
+Date:        Fri Dec 23 16:41:15 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     27
+    Unconnected ports (LINT-28)                                    27
+
+Cells                                                              54
+    Cells do not drive (LINT-1)                                     9
+    Connected to power or ground (LINT-32)                         34
+    Nets connected to multiple pins on same cell (LINT-33)         11
+
+Nets                                                               11
+    Unloaded nets (LINT-2)                                         11
+--------------------------------------------------------------------------------
+
+Warning: In design 'fa_step1', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'fa_step1', cell 'B_5' does not drive any nets. (LINT-1)
+Warning: In design 'fa_step1', cell 'B_6' does not drive any nets. (LINT-1)
+Warning: In design 'fa_step1', cell 'B_8' does not drive any nets. (LINT-1)
+Warning: In design 'fa_step1', cell 'B_9' does not drive any nets. (LINT-1)
+Warning: In design 'fa_step5', cell 'C147' does not drive any nets. (LINT-1)
+Warning: In design 'fa_step5', cell 'C150' does not drive any nets. (LINT-1)
+Warning: In design 'fa_step5', cell 'C153' does not drive any nets. (LINT-1)
+Warning: In design 'fa_step5', cell 'C157' does not drive any nets. (LINT-1)
+Warning: In design 'fp_mac', net 'ADD1/fa5_out_significand[23]' driven by pin 'ADD1/FA5/out_sg[23]' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'MUL1/FM1/carry_r1[22]' driven by pin 'MUL1/FM1/am_row1[21].fm_s1_am1/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'MUL1/FM2/carry[2][22]' driven by pin 'MUL1/FM2/am_row2[21].fm_s2_am21/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'MUL1/FM2/carry[3][22]' driven by pin 'MUL1/FM2/am_row3_9[3].am_col[21].fm_s2_am2/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'MUL1/FM2/carry[4][22]' driven by pin 'MUL1/FM2/am_row3_9[4].am_col[21].fm_s2_am2/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'MUL1/FM2/carry[5][22]' driven by pin 'MUL1/FM2/am_row3_9[5].am_col[21].fm_s2_am2/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'MUL1/FM2/carry[6][22]' driven by pin 'MUL1/FM2/am_row3_9[6].am_col[21].fm_s2_am2/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'MUL1/FM2/carry[7][22]' driven by pin 'MUL1/FM2/am_row3_9[7].am_col[21].fm_s2_am2/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'MUL1/FM2/carry[8][22]' driven by pin 'MUL1/FM2/am_row3_9[8].am_col[21].fm_s2_am2/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'MUL1/FM2/carry[9][22]' driven by pin 'MUL1/FM2/am_row3_9[9].am_col[21].fm_s2_am2/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'MUL1/FM3/carry[22]' driven by pin 'MUL1/FM3/am_row1[21].fm_s3_am10/co' has no loads. (LINT-2)
+Warning: In design 'fm_step4', port 'mul_out[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'P2[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'P2[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'P2[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'P2[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step3', port 'in_GG[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'fa_step4', port 'P0[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[0].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'x' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[0].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[11].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'y' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[12].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'x' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[12].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'y' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[13].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'x' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[13].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'y' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[14].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'x' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[14].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'y' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[15].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'x' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[15].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'y' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[16].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'x' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[16].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'y' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[17].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'x' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[17].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'y' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[18].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'x' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[18].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'y' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[19].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'x' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[19].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'y' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[20].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'x' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[20].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'y' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[21].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'x' is connected to logic 0. 
+Warning: In design 'fm_step1', a pin on submodule 'am_row1[21].fm_s1_am1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'y' is connected to logic 0. 
+Warning: In design 'fm_step2', a pin on submodule 'am_row2[0].fm_s2_am21' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'fm_step2', a pin on submodule 'am_row3_9[3].am_col[0].fm_s2_am2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'fm_step2', a pin on submodule 'am_row3_9[4].am_col[0].fm_s2_am2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'fm_step2', a pin on submodule 'am_row3_9[5].am_col[0].fm_s2_am2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'fm_step2', a pin on submodule 'am_row3_9[6].am_col[0].fm_s2_am2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'fm_step2', a pin on submodule 'am_row3_9[7].am_col[0].fm_s2_am2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'fm_step2', a pin on submodule 'am_row3_9[8].am_col[0].fm_s2_am2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'fm_step2', a pin on submodule 'am_row3_9[9].am_col[0].fm_s2_am2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'fm_step3', a pin on submodule 'am_row1[0].fm_s3_am10' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'fa_step2', a pin on submodule 'G_U1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'G0' is connected to logic 0. 
+Warning: In design 'fa_step2', a pin on submodule 'G_U21' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'G0' is connected to logic 0. 
+Warning: In design 'fm_step1', the same net is connected to more than one pin on submodule 'am_row1[0].fm_s1_am1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'x', 'ci''.
+Warning: In design 'fm_step1', the same net is connected to more than one pin on submodule 'am_row1[12].fm_s1_am1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'x', 'y''.
+Warning: In design 'fm_step1', the same net is connected to more than one pin on submodule 'am_row1[13].fm_s1_am1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'x', 'y''.
+Warning: In design 'fm_step1', the same net is connected to more than one pin on submodule 'am_row1[14].fm_s1_am1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'x', 'y''.
+Warning: In design 'fm_step1', the same net is connected to more than one pin on submodule 'am_row1[15].fm_s1_am1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'x', 'y''.
+Warning: In design 'fm_step1', the same net is connected to more than one pin on submodule 'am_row1[16].fm_s1_am1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'x', 'y''.
+Warning: In design 'fm_step1', the same net is connected to more than one pin on submodule 'am_row1[17].fm_s1_am1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'x', 'y''.
+Warning: In design 'fm_step1', the same net is connected to more than one pin on submodule 'am_row1[18].fm_s1_am1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'x', 'y''.
+Warning: In design 'fm_step1', the same net is connected to more than one pin on submodule 'am_row1[19].fm_s1_am1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'x', 'y''.
+Warning: In design 'fm_step1', the same net is connected to more than one pin on submodule 'am_row1[20].fm_s1_am1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'x', 'y''.
+Warning: In design 'fm_step1', the same net is connected to more than one pin on submodule 'am_row1[21].fm_s1_am1'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'x', 'y''.
+1

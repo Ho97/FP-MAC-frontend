@@ -1,0 +1,3 @@
+../TESTBENCH/tb_fp_mac.v
+/data/SYNOPSYS/lib/32nm/SAED32_EDK/lib/stdcell_rvt/verilog/saed32nm.v
+./fp_mac.mapped.v

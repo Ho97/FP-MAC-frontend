@@ -1,0 +1,3 @@
+Command Line: /data/SYNOPSYS/verdi/Verdi_M-2017.03-SP2/platform/LINUXAMD64/bin/Novas -ssf fp_mac.fsdb
+uname(Linux AIHA 5.4.0-132-generic #148~18.04.1-Ubuntu SMP Mon Oct 24 20:41:14 UTC 2022 x86_64)
+au time 184.558500 9.570185 6.249103 delta 710586368 710586368 total 1101299712 1101299712

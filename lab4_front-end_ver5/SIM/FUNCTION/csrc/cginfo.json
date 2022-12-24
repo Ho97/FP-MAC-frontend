@@ -1,0 +1,119 @@
+{
+    "Misc": {
+        "daidir_abs": "/home/capstone9/capstone/lab4_front-end_ver5/SIM/FUNCTION/simv.daidir",
+        "cwd": "/home/capstone9/capstone/lab4_front-end_ver5/SIM/FUNCTION",
+        "csrc": "csrc",
+        "csrc_abs": "/home/capstone9/capstone/lab4_front-end_ver5/SIM/FUNCTION/csrc",
+        "daidir": "simv.daidir",
+        "archive_dir": "archive.0",
+        "default_output_dir": "csrc"
+    },
+    "MlibObjs": {},
+    "PrevCompiledModules": {},
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "nMops": 13459,
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.24512600000000001,
+            "ru_stime_sec": 0.052240000000000002,
+            "ru_maxrss_kb": 96364,
+            "ru_nivcsw": 2,
+            "ru_minflt": 9896,
+            "ru_majflt": 0,
+            "ru_nvcsw": 44
+        },
+        "Frontend(%)": 75.571271781085457,
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.072176000000000004,
+            "ru_stime_sec": 0.059091999999999999,
+            "ru_maxrss_kb": 38248,
+            "ru_nivcsw": 2,
+            "ru_minflt": 9989,
+            "ru_majflt": 0,
+            "ru_nvcsw": 28
+        },
+        "CodeGen(%)": 24.428728218914546,
+        "nQuads": 5325,
+        "totalObjSize": 1852655725,
+        "ru_self_end": {
+            "ru_utime_sec": 0.32436399999999999,
+            "ru_stime_sec": 0.064395999999999995,
+            "ru_maxrss_kb": 105608,
+            "ru_nivcsw": 2,
+            "ru_minflt": 11629,
+            "ru_majflt": 0,
+            "ru_nvcsw": 44
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.072176000000000004,
+            "ru_stime_sec": 0.059091999999999999,
+            "ru_maxrss_kb": 38248,
+            "ru_nivcsw": 2,
+            "ru_minflt": 9989,
+            "ru_majflt": 0,
+            "ru_nvcsw": 28
+        },
+        "mopSpeed": 169855.37242232269,
+        "quadSpeed": 67202.604810823104,
+        "mop/quad": 2.5275117370892017,
+        "outputSizePerQuad": 347916.56807511736,
+        "peak_mem_kb": 214480
+    },
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module",
+            1
+        ],
+        "tb_fp_mac": [
+            "tb_fp_mac",
+            "T6IIT",
+            "module",
+            2
+        ],
+        "full_adder": [
+            "full_adder",
+            "BEdzp",
+            "module",
+            3
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module",
+            5
+        ],
+        "B_Cell": [
+            "B_Cell",
+            "bmnSU",
+            "module",
+            4
+        ]
+    },
+    "PEModules": [],
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 72571
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "tb_fp_mac",
+        "tb_fp_mac",
+        "full_adder",
+        "full_adder",
+        "B_Cell",
+        "B_Cell"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileProcesses": [
+        "cgproc.23542.json"
+    ],
+    "CompileStatus": "Successful"
+}

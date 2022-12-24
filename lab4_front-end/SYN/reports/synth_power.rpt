@@ -1,0 +1,443 @@
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort medium
+Design : fp_mac
+Version: O-2018.06-SP4
+Date   : Mon Dec 19 02:52:38 2022
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ff1p16vn40c (File: /data/SYNOPSYS/lib/32nm/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ff1p16vn40c.db)
+
+
+Operating Conditions: ff1p16vn40c   Library: saed32rvt_ff1p16vn40c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+fp_mac                 35000             saed32rvt_ff1p16vn40c
+float_multiplier       16000             saed32rvt_ff1p16vn40c
+sum_out_buffer         8000              saed32rvt_ff1p16vn40c
+float_adder            16000             saed32rvt_ff1p16vn40c
+ex_adder               ForQA             saed32rvt_ff1p16vn40c
+sign_determine         ForQA             saed32rvt_ff1p16vn40c
+step1_status           ForQA             saed32rvt_ff1p16vn40c
+step2_status           8000              saed32rvt_ff1p16vn40c
+sg_multiplier          16000             saed32rvt_ff1p16vn40c
+step3_status           8000              saed32rvt_ff1p16vn40c
+sg_firstone            ForQA             saed32rvt_ff1p16vn40c
+step4_status           ForQA             saed32rvt_ff1p16vn40c
+sg_normalizer          8000              saed32rvt_ff1p16vn40c
+result_status          8000              saed32rvt_ff1p16vn40c
+temporary_box_0        8000              saed32rvt_ff1p16vn40c
+ex_comparison          ForQA             saed32rvt_ff1p16vn40c
+step1_adder_status     ForQA             saed32rvt_ff1p16vn40c
+fr_shifter             8000              saed32rvt_ff1p16vn40c
+fr_adder               8000              saed32rvt_ff1p16vn40c
+step2_adder_status     8000              saed32rvt_ff1p16vn40c
+fr_firstone            ForQA             saed32rvt_ff1p16vn40c
+step3_adder_status     8000              saed32rvt_ff1p16vn40c
+fr_normalize           8000              saed32rvt_ff1p16vn40c
+step4_adder_status     ForQA             saed32rvt_ff1p16vn40c
+fr_round               8000              saed32rvt_ff1p16vn40c
+step5_adder_status     ForQA             saed32rvt_ff1p16vn40c
+result_adder_status    8000              saed32rvt_ff1p16vn40c
+temporary_box_mul_0    ForQA             saed32rvt_ff1p16vn40c
+full_adder_0           ForQA             saed32rvt_ff1p16vn40c
+fr_adder_pre           8000              saed32rvt_ff1p16vn40c
+fr_adder_prepare       8000              saed32rvt_ff1p16vn40c
+KS_step1               8000              saed32rvt_ff1p16vn40c
+KS_step2               8000              saed32rvt_ff1p16vn40c
+KS_step3               8000              saed32rvt_ff1p16vn40c
+KS_step4               8000              saed32rvt_ff1p16vn40c
+KS_step5               8000              saed32rvt_ff1p16vn40c
+KS_step6               8000              saed32rvt_ff1p16vn40c
+temporary_box_add_0    ForQA             saed32rvt_ff1p16vn40c
+G_Cell_0               ForQA             saed32rvt_ff1p16vn40c
+B_Cell_0               ForQA             saed32rvt_ff1p16vn40c
+B_Cell_1               ForQA             saed32rvt_ff1p16vn40c
+B_Cell_2               ForQA             saed32rvt_ff1p16vn40c
+B_Cell_3               ForQA             saed32rvt_ff1p16vn40c
+B_Cell_4               ForQA             saed32rvt_ff1p16vn40c
+B_Cell_5               ForQA             saed32rvt_ff1p16vn40c
+B_Cell_6               ForQA             saed32rvt_ff1p16vn40c
+B_Cell_7               ForQA             saed32rvt_ff1p16vn40c
+B_Cell_8               ForQA             saed32rvt_ff1p16vn40c
+B_Cell_9               ForQA             saed32rvt_ff1p16vn40c
+B_Cell_10              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_11              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_12              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_13              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_14              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_15              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_16              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_17              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_18              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_19              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_20              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_21              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_22              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_23              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_24              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_25              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_26              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_27              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_28              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_29              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_30              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_31              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_32              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_33              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_34              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_35              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_36              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_37              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_38              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_39              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_40              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_41              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_42              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_43              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_44              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_45              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_46              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_47              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_48              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_49              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_50              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_51              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_52              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_53              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_54              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_55              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_56              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_57              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_58              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_59              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_60              ForQA             saed32rvt_ff1p16vn40c
+B_Cell_61              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_1               ForQA             saed32rvt_ff1p16vn40c
+G_Cell_2               ForQA             saed32rvt_ff1p16vn40c
+G_Cell_3               ForQA             saed32rvt_ff1p16vn40c
+G_Cell_4               ForQA             saed32rvt_ff1p16vn40c
+G_Cell_5               ForQA             saed32rvt_ff1p16vn40c
+G_Cell_6               ForQA             saed32rvt_ff1p16vn40c
+G_Cell_7               ForQA             saed32rvt_ff1p16vn40c
+G_Cell_8               ForQA             saed32rvt_ff1p16vn40c
+G_Cell_9               ForQA             saed32rvt_ff1p16vn40c
+G_Cell_10              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_11              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_12              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_13              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_14              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_15              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_16              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_17              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_18              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_19              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_20              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_21              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_22              ForQA             saed32rvt_ff1p16vn40c
+G_Cell_23              ForQA             saed32rvt_ff1p16vn40c
+full_adder_1           ForQA             saed32rvt_ff1p16vn40c
+full_adder_2           ForQA             saed32rvt_ff1p16vn40c
+full_adder_3           ForQA             saed32rvt_ff1p16vn40c
+full_adder_4           ForQA             saed32rvt_ff1p16vn40c
+full_adder_5           ForQA             saed32rvt_ff1p16vn40c
+full_adder_6           ForQA             saed32rvt_ff1p16vn40c
+full_adder_7           ForQA             saed32rvt_ff1p16vn40c
+full_adder_8           ForQA             saed32rvt_ff1p16vn40c
+full_adder_9           ForQA             saed32rvt_ff1p16vn40c
+full_adder_10          ForQA             saed32rvt_ff1p16vn40c
+full_adder_11          ForQA             saed32rvt_ff1p16vn40c
+full_adder_12          ForQA             saed32rvt_ff1p16vn40c
+full_adder_13          ForQA             saed32rvt_ff1p16vn40c
+full_adder_14          ForQA             saed32rvt_ff1p16vn40c
+full_adder_15          ForQA             saed32rvt_ff1p16vn40c
+full_adder_16          ForQA             saed32rvt_ff1p16vn40c
+full_adder_17          ForQA             saed32rvt_ff1p16vn40c
+full_adder_18          ForQA             saed32rvt_ff1p16vn40c
+full_adder_19          ForQA             saed32rvt_ff1p16vn40c
+full_adder_20          ForQA             saed32rvt_ff1p16vn40c
+full_adder_21          ForQA             saed32rvt_ff1p16vn40c
+full_adder_22          ForQA             saed32rvt_ff1p16vn40c
+full_adder_23          ForQA             saed32rvt_ff1p16vn40c
+full_adder_24          ForQA             saed32rvt_ff1p16vn40c
+full_adder_25          ForQA             saed32rvt_ff1p16vn40c
+full_adder_26          ForQA             saed32rvt_ff1p16vn40c
+full_adder_27          ForQA             saed32rvt_ff1p16vn40c
+full_adder_28          ForQA             saed32rvt_ff1p16vn40c
+full_adder_29          ForQA             saed32rvt_ff1p16vn40c
+full_adder_30          ForQA             saed32rvt_ff1p16vn40c
+full_adder_31          ForQA             saed32rvt_ff1p16vn40c
+full_adder_32          ForQA             saed32rvt_ff1p16vn40c
+full_adder_33          ForQA             saed32rvt_ff1p16vn40c
+full_adder_34          ForQA             saed32rvt_ff1p16vn40c
+full_adder_35          ForQA             saed32rvt_ff1p16vn40c
+full_adder_36          ForQA             saed32rvt_ff1p16vn40c
+full_adder_37          ForQA             saed32rvt_ff1p16vn40c
+full_adder_38          ForQA             saed32rvt_ff1p16vn40c
+full_adder_39          ForQA             saed32rvt_ff1p16vn40c
+full_adder_40          ForQA             saed32rvt_ff1p16vn40c
+full_adder_41          ForQA             saed32rvt_ff1p16vn40c
+full_adder_42          ForQA             saed32rvt_ff1p16vn40c
+full_adder_43          ForQA             saed32rvt_ff1p16vn40c
+full_adder_44          ForQA             saed32rvt_ff1p16vn40c
+full_adder_45          ForQA             saed32rvt_ff1p16vn40c
+full_adder_46          ForQA             saed32rvt_ff1p16vn40c
+full_adder_47          ForQA             saed32rvt_ff1p16vn40c
+full_adder_48          ForQA             saed32rvt_ff1p16vn40c
+full_adder_49          ForQA             saed32rvt_ff1p16vn40c
+full_adder_50          ForQA             saed32rvt_ff1p16vn40c
+full_adder_51          ForQA             saed32rvt_ff1p16vn40c
+full_adder_52          ForQA             saed32rvt_ff1p16vn40c
+full_adder_53          ForQA             saed32rvt_ff1p16vn40c
+full_adder_54          ForQA             saed32rvt_ff1p16vn40c
+full_adder_55          ForQA             saed32rvt_ff1p16vn40c
+full_adder_56          ForQA             saed32rvt_ff1p16vn40c
+full_adder_57          ForQA             saed32rvt_ff1p16vn40c
+full_adder_58          ForQA             saed32rvt_ff1p16vn40c
+full_adder_59          ForQA             saed32rvt_ff1p16vn40c
+full_adder_60          ForQA             saed32rvt_ff1p16vn40c
+full_adder_61          ForQA             saed32rvt_ff1p16vn40c
+full_adder_62          ForQA             saed32rvt_ff1p16vn40c
+full_adder_63          ForQA             saed32rvt_ff1p16vn40c
+full_adder_64          ForQA             saed32rvt_ff1p16vn40c
+full_adder_65          ForQA             saed32rvt_ff1p16vn40c
+full_adder_66          ForQA             saed32rvt_ff1p16vn40c
+full_adder_67          ForQA             saed32rvt_ff1p16vn40c
+full_adder_68          ForQA             saed32rvt_ff1p16vn40c
+full_adder_69          ForQA             saed32rvt_ff1p16vn40c
+full_adder_70          ForQA             saed32rvt_ff1p16vn40c
+full_adder_71          ForQA             saed32rvt_ff1p16vn40c
+full_adder_72          ForQA             saed32rvt_ff1p16vn40c
+full_adder_73          ForQA             saed32rvt_ff1p16vn40c
+full_adder_74          ForQA             saed32rvt_ff1p16vn40c
+full_adder_75          ForQA             saed32rvt_ff1p16vn40c
+full_adder_76          ForQA             saed32rvt_ff1p16vn40c
+full_adder_77          ForQA             saed32rvt_ff1p16vn40c
+full_adder_78          ForQA             saed32rvt_ff1p16vn40c
+full_adder_79          ForQA             saed32rvt_ff1p16vn40c
+full_adder_80          ForQA             saed32rvt_ff1p16vn40c
+full_adder_81          ForQA             saed32rvt_ff1p16vn40c
+full_adder_82          ForQA             saed32rvt_ff1p16vn40c
+full_adder_83          ForQA             saed32rvt_ff1p16vn40c
+full_adder_84          ForQA             saed32rvt_ff1p16vn40c
+full_adder_85          ForQA             saed32rvt_ff1p16vn40c
+full_adder_86          ForQA             saed32rvt_ff1p16vn40c
+full_adder_87          ForQA             saed32rvt_ff1p16vn40c
+full_adder_88          ForQA             saed32rvt_ff1p16vn40c
+full_adder_89          ForQA             saed32rvt_ff1p16vn40c
+full_adder_90          ForQA             saed32rvt_ff1p16vn40c
+full_adder_91          ForQA             saed32rvt_ff1p16vn40c
+full_adder_92          ForQA             saed32rvt_ff1p16vn40c
+full_adder_93          ForQA             saed32rvt_ff1p16vn40c
+full_adder_94          ForQA             saed32rvt_ff1p16vn40c
+full_adder_95          ForQA             saed32rvt_ff1p16vn40c
+full_adder_96          ForQA             saed32rvt_ff1p16vn40c
+full_adder_97          ForQA             saed32rvt_ff1p16vn40c
+full_adder_98          ForQA             saed32rvt_ff1p16vn40c
+full_adder_99          ForQA             saed32rvt_ff1p16vn40c
+full_adder_100         ForQA             saed32rvt_ff1p16vn40c
+full_adder_101         ForQA             saed32rvt_ff1p16vn40c
+full_adder_102         ForQA             saed32rvt_ff1p16vn40c
+full_adder_103         ForQA             saed32rvt_ff1p16vn40c
+full_adder_104         ForQA             saed32rvt_ff1p16vn40c
+full_adder_105         ForQA             saed32rvt_ff1p16vn40c
+full_adder_106         ForQA             saed32rvt_ff1p16vn40c
+full_adder_107         ForQA             saed32rvt_ff1p16vn40c
+full_adder_108         ForQA             saed32rvt_ff1p16vn40c
+full_adder_109         ForQA             saed32rvt_ff1p16vn40c
+full_adder_110         ForQA             saed32rvt_ff1p16vn40c
+full_adder_111         ForQA             saed32rvt_ff1p16vn40c
+full_adder_112         ForQA             saed32rvt_ff1p16vn40c
+full_adder_113         ForQA             saed32rvt_ff1p16vn40c
+full_adder_114         ForQA             saed32rvt_ff1p16vn40c
+full_adder_115         ForQA             saed32rvt_ff1p16vn40c
+full_adder_116         ForQA             saed32rvt_ff1p16vn40c
+full_adder_117         ForQA             saed32rvt_ff1p16vn40c
+full_adder_118         ForQA             saed32rvt_ff1p16vn40c
+full_adder_119         ForQA             saed32rvt_ff1p16vn40c
+full_adder_120         ForQA             saed32rvt_ff1p16vn40c
+full_adder_121         ForQA             saed32rvt_ff1p16vn40c
+full_adder_122         ForQA             saed32rvt_ff1p16vn40c
+full_adder_123         ForQA             saed32rvt_ff1p16vn40c
+full_adder_124         ForQA             saed32rvt_ff1p16vn40c
+full_adder_125         ForQA             saed32rvt_ff1p16vn40c
+full_adder_126         ForQA             saed32rvt_ff1p16vn40c
+full_adder_127         ForQA             saed32rvt_ff1p16vn40c
+full_adder_128         ForQA             saed32rvt_ff1p16vn40c
+full_adder_129         ForQA             saed32rvt_ff1p16vn40c
+full_adder_130         ForQA             saed32rvt_ff1p16vn40c
+full_adder_131         ForQA             saed32rvt_ff1p16vn40c
+full_adder_132         ForQA             saed32rvt_ff1p16vn40c
+full_adder_133         ForQA             saed32rvt_ff1p16vn40c
+full_adder_134         ForQA             saed32rvt_ff1p16vn40c
+full_adder_135         ForQA             saed32rvt_ff1p16vn40c
+full_adder_136         ForQA             saed32rvt_ff1p16vn40c
+full_adder_137         ForQA             saed32rvt_ff1p16vn40c
+full_adder_138         ForQA             saed32rvt_ff1p16vn40c
+full_adder_139         ForQA             saed32rvt_ff1p16vn40c
+full_adder_140         ForQA             saed32rvt_ff1p16vn40c
+full_adder_141         ForQA             saed32rvt_ff1p16vn40c
+full_adder_142         ForQA             saed32rvt_ff1p16vn40c
+full_adder_143         ForQA             saed32rvt_ff1p16vn40c
+full_adder_144         ForQA             saed32rvt_ff1p16vn40c
+full_adder_145         ForQA             saed32rvt_ff1p16vn40c
+full_adder_146         ForQA             saed32rvt_ff1p16vn40c
+full_adder_147         ForQA             saed32rvt_ff1p16vn40c
+full_adder_148         ForQA             saed32rvt_ff1p16vn40c
+full_adder_149         ForQA             saed32rvt_ff1p16vn40c
+full_adder_150         ForQA             saed32rvt_ff1p16vn40c
+full_adder_151         ForQA             saed32rvt_ff1p16vn40c
+full_adder_152         ForQA             saed32rvt_ff1p16vn40c
+full_adder_153         ForQA             saed32rvt_ff1p16vn40c
+full_adder_154         ForQA             saed32rvt_ff1p16vn40c
+full_adder_155         ForQA             saed32rvt_ff1p16vn40c
+full_adder_156         ForQA             saed32rvt_ff1p16vn40c
+full_adder_157         ForQA             saed32rvt_ff1p16vn40c
+full_adder_158         ForQA             saed32rvt_ff1p16vn40c
+full_adder_159         ForQA             saed32rvt_ff1p16vn40c
+full_adder_160         ForQA             saed32rvt_ff1p16vn40c
+full_adder_161         ForQA             saed32rvt_ff1p16vn40c
+full_adder_162         ForQA             saed32rvt_ff1p16vn40c
+full_adder_163         ForQA             saed32rvt_ff1p16vn40c
+full_adder_164         ForQA             saed32rvt_ff1p16vn40c
+full_adder_165         ForQA             saed32rvt_ff1p16vn40c
+full_adder_166         ForQA             saed32rvt_ff1p16vn40c
+full_adder_167         ForQA             saed32rvt_ff1p16vn40c
+full_adder_168         ForQA             saed32rvt_ff1p16vn40c
+full_adder_169         ForQA             saed32rvt_ff1p16vn40c
+full_adder_170         ForQA             saed32rvt_ff1p16vn40c
+full_adder_171         ForQA             saed32rvt_ff1p16vn40c
+full_adder_172         ForQA             saed32rvt_ff1p16vn40c
+full_adder_173         ForQA             saed32rvt_ff1p16vn40c
+full_adder_174         ForQA             saed32rvt_ff1p16vn40c
+full_adder_175         ForQA             saed32rvt_ff1p16vn40c
+full_adder_176         ForQA             saed32rvt_ff1p16vn40c
+full_adder_177         ForQA             saed32rvt_ff1p16vn40c
+full_adder_178         ForQA             saed32rvt_ff1p16vn40c
+full_adder_179         ForQA             saed32rvt_ff1p16vn40c
+full_adder_180         ForQA             saed32rvt_ff1p16vn40c
+full_adder_181         ForQA             saed32rvt_ff1p16vn40c
+full_adder_182         ForQA             saed32rvt_ff1p16vn40c
+full_adder_183         ForQA             saed32rvt_ff1p16vn40c
+full_adder_184         ForQA             saed32rvt_ff1p16vn40c
+full_adder_185         ForQA             saed32rvt_ff1p16vn40c
+full_adder_186         ForQA             saed32rvt_ff1p16vn40c
+full_adder_187         ForQA             saed32rvt_ff1p16vn40c
+full_adder_188         ForQA             saed32rvt_ff1p16vn40c
+full_adder_189         ForQA             saed32rvt_ff1p16vn40c
+full_adder_190         ForQA             saed32rvt_ff1p16vn40c
+full_adder_191         ForQA             saed32rvt_ff1p16vn40c
+full_adder_192         ForQA             saed32rvt_ff1p16vn40c
+full_adder_193         ForQA             saed32rvt_ff1p16vn40c
+full_adder_194         ForQA             saed32rvt_ff1p16vn40c
+full_adder_195         ForQA             saed32rvt_ff1p16vn40c
+full_adder_196         ForQA             saed32rvt_ff1p16vn40c
+full_adder_197         ForQA             saed32rvt_ff1p16vn40c
+full_adder_198         ForQA             saed32rvt_ff1p16vn40c
+full_adder_199         ForQA             saed32rvt_ff1p16vn40c
+full_adder_200         ForQA             saed32rvt_ff1p16vn40c
+full_adder_201         ForQA             saed32rvt_ff1p16vn40c
+full_adder_202         ForQA             saed32rvt_ff1p16vn40c
+full_adder_203         ForQA             saed32rvt_ff1p16vn40c
+full_adder_204         ForQA             saed32rvt_ff1p16vn40c
+full_adder_205         ForQA             saed32rvt_ff1p16vn40c
+full_adder_206         ForQA             saed32rvt_ff1p16vn40c
+full_adder_207         ForQA             saed32rvt_ff1p16vn40c
+full_adder_208         ForQA             saed32rvt_ff1p16vn40c
+full_adder_209         ForQA             saed32rvt_ff1p16vn40c
+full_adder_210         ForQA             saed32rvt_ff1p16vn40c
+full_adder_211         ForQA             saed32rvt_ff1p16vn40c
+full_adder_212         ForQA             saed32rvt_ff1p16vn40c
+full_adder_213         ForQA             saed32rvt_ff1p16vn40c
+full_adder_214         ForQA             saed32rvt_ff1p16vn40c
+full_adder_215         ForQA             saed32rvt_ff1p16vn40c
+full_adder_216         ForQA             saed32rvt_ff1p16vn40c
+full_adder_217         ForQA             saed32rvt_ff1p16vn40c
+full_adder_218         ForQA             saed32rvt_ff1p16vn40c
+full_adder_219         ForQA             saed32rvt_ff1p16vn40c
+temporary_box_mul_1    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_mul_2    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_mul_3    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_mul_4    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_mul_5    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_mul_6    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_mul_7    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_mul_8    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_mul_9    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_add_1    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_add_2    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_add_3    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_add_4    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_add_5    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_add_6    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_add_7    ForQA             saed32rvt_ff1p16vn40c
+temporary_box_1        8000              saed32rvt_ff1p16vn40c
+temporary_box_2        8000              saed32rvt_ff1p16vn40c
+temporary_box_3        8000              saed32rvt_ff1p16vn40c
+temporary_box_4        8000              saed32rvt_ff1p16vn40c
+temporary_box_5        8000              saed32rvt_ff1p16vn40c
+temporary_box_6        8000              saed32rvt_ff1p16vn40c
+temporary_box_7        8000              saed32rvt_ff1p16vn40c
+temporary_box_8        8000              saed32rvt_ff1p16vn40c
+temporary_box_9        8000              saed32rvt_ff1p16vn40c
+temporary_box_10       8000              saed32rvt_ff1p16vn40c
+temporary_box_11       8000              saed32rvt_ff1p16vn40c
+temporary_box_12       8000              saed32rvt_ff1p16vn40c
+temporary_box_13       8000              saed32rvt_ff1p16vn40c
+fr_round_DW01_inc_0    ForQA             saed32rvt_ff1p16vn40c
+fr_round_DW01_inc_1    ForQA             saed32rvt_ff1p16vn40c
+fr_normalize_DW01_inc_0
+                       ForQA             saed32rvt_ff1p16vn40c
+fr_adder_pre_DW_cmp_0  ForQA             saed32rvt_ff1p16vn40c
+ex_comparison_DW01_sub_0
+                       ForQA             saed32rvt_ff1p16vn40c
+ex_adder_DW01_add_0    ForQA             saed32rvt_ff1p16vn40c
+fr_normalize_DW01_add_0
+                       ForQA             saed32rvt_ff1p16vn40c
+sg_normalizer_DW01_add_0
+                       ForQA             saed32rvt_ff1p16vn40c
+fr_adder_pre_DW01_inc_0
+                       ForQA             saed32rvt_ff1p16vn40c
+fr_adder_pre_DW01_inc_1
+                       ForQA             saed32rvt_ff1p16vn40c
+
+
+Global Operating Voltage = 1.16 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 389.7216 uW   (80%)
+  Net Switching Power  =  96.6840 uW   (20%)
+                         ---------
+Total Dynamic Power    = 486.4056 uW  (100%)
+
+Cell Leakage Power     = 593.2980 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register         234.2749           25.4280        3.5688e+08          616.5779  (  57.11%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    155.4459           71.2561        2.3642e+08          463.1245  (  42.89%)
+--------------------------------------------------------------------------------------------------
+Total            389.7208 uW        96.6841 uW     5.9330e+08 pW     1.0797e+03 uW
+1

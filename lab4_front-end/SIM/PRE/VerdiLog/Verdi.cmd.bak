@@ -1,0 +1,5 @@
+wvCreateWindow
+wvOpenFile -win $_nWave2 \
+           {/home/capstone9/capstone/lab4_front-end/SIM/PRE/fp_mac.fsdb}
+verdiDockWidgetDisplay -dock widgetDock_WelcomePage
+debExit

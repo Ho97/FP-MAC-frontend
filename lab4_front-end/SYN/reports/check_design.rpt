@@ -1,0 +1,177 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP4
+Date:        Mon Dec 19 02:52:26 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    103
+    Unconnected ports (LINT-28)                                   103
+
+Cells                                                              26
+    Cells do not drive (LINT-1)                                    10
+    Connected to power or ground (LINT-32)                         14
+    Nets connected to multiple pins on same cell (LINT-33)          2
+
+Nets                                                               10
+    Unloaded nets (LINT-2)                                         10
+--------------------------------------------------------------------------------
+
+Warning: In design 'ex_adder', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'sg_normalizer', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'fr_shifter', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'fr_shifter', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'fr_normalize', cell 'C124' does not drive any nets. (LINT-1)
+Warning: In design 'fr_normalize', cell 'C125' does not drive any nets. (LINT-1)
+Warning: In design 'fr_round', cell 'C143' does not drive any nets. (LINT-1)
+Warning: In design 'fr_adder_pre', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'fr_adder_pre', cell 'B_3' does not drive any nets. (LINT-1)
+Warning: In design 'fr_adder_pre', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'fp_mac', net 'FM1/SM1/carry[1][22]' driven by pin 'FM1/SM1/psum_row[1].psum_col[21].u0/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'FM1/SM1/carry[2][22]' driven by pin 'FM1/SM1/psum_row[2].psum_col[21].u0/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'FM1/SM1/carry[3][22]' driven by pin 'FM1/SM1/psum_row[3].psum_col[21].u0/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'FM1/SM1/carry[4][22]' driven by pin 'FM1/SM1/psum_row[4].psum_col[21].u0/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'FM1/SM1/carry[5][22]' driven by pin 'FM1/SM1/psum_row[5].psum_col[21].u0/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'FM1/SM1/carry[6][22]' driven by pin 'FM1/SM1/psum_row[6].psum_col[21].u0/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'FM1/SM1/carry[7][22]' driven by pin 'FM1/SM1/psum_row[7].psum_col[21].u0/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'FM1/SM1/carry[8][22]' driven by pin 'FM1/SM1/psum_row[8].psum_col[21].u0/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'FM1/SM1/carry[9][22]' driven by pin 'FM1/SM1/psum_row[9].psum_col[21].u0/co' has no loads. (LINT-2)
+Warning: In design 'fp_mac', net 'FM1/SM1/carry[10][22]' driven by pin 'FM1/SM1/psum_row[10].psum_col[21].u0/co' has no loads. (LINT-2)
+Warning: In design 'result_status', port 'out_significand[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'result_adder_status', port 'significand[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'P1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'P1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step2', port 'in_GG[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'P2[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'P2[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'P2[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'P2[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step3', port 'in_GG[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step4', port 'in_GG[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'G4[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'G4[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'G4[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'G4[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'G4[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'G4[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'G4[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'G4[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'P4[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'in_GG[24]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'in_GG[23]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'in_GG[22]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'in_GG[21]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'in_GG[20]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'in_GG[19]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'in_GG[18]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'in_GG[17]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step5', port 'in_GG[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'KS_step6', port 'P0[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'float_multiplier', a pin on submodule 'SS1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_significand_A[10]' is connected to logic 1. 
+Warning: In design 'float_multiplier', a pin on submodule 'SS1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in_significand_B[10]' is connected to logic 1. 
+Warning: In design 'float_adder', a pin on submodule 'S1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[23]' is connected to logic 1. 
+Warning: In design 'float_adder', a pin on submodule 'S1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[23]' is connected to logic 1. 
+Warning: In design 'sg_multiplier', a pin on submodule 'psum_row[1].psum_col[0].u0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'sg_multiplier', a pin on submodule 'psum_row[2].psum_col[0].u0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'sg_multiplier', a pin on submodule 'psum_row[3].psum_col[0].u0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'sg_multiplier', a pin on submodule 'psum_row[4].psum_col[0].u0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'sg_multiplier', a pin on submodule 'psum_row[5].psum_col[0].u0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'sg_multiplier', a pin on submodule 'psum_row[6].psum_col[0].u0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'sg_multiplier', a pin on submodule 'psum_row[7].psum_col[0].u0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'sg_multiplier', a pin on submodule 'psum_row[8].psum_col[0].u0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'sg_multiplier', a pin on submodule 'psum_row[9].psum_col[0].u0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'sg_multiplier', a pin on submodule 'psum_row[10].psum_col[0].u0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ci' is connected to logic 0. 
+Warning: In design 'float_multiplier', the same net is connected to more than one pin on submodule 'SS1'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'in_significand_A[10]', 'in_significand_B[10]''.
+Warning: In design 'float_adder', the same net is connected to more than one pin on submodule 'S1'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'A[23]', 'B[23]''.
+1

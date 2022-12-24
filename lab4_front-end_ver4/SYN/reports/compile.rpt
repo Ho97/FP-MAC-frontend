@@ -1,0 +1,275 @@
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.4 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.4 |     *     |
+============================================================================
+
+
+Information: There are 92 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition ff1p16vn40c set on design fp_mac has different process,
+voltage and temperatures parameters than the parameters at which target library 
+saed32rvt_ss0p95v125c is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'fa_step5'
+  Processing 'fa_step4'
+  Processing 'G_Cell_0'
+  Processing 'B_Cell_0'
+  Processing 'fa_step3'
+  Processing 'fa_step2'
+Information: The register 'out_G2_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_GG_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_P0_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_P2_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_P2_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_P2_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_P2_reg[0]' is a constant and will be removed. (OPT-1206)
+  Processing 'fa_step1'
+Information: Added key list 'DesignWare' to design 'fa_step1'. (DDB-72)
+  Processing 'float_adder'
+  Processing 'temporary_box_0'
+  Processing 'sum_out_buffer'
+  Processing 'fm_step4'
+Information: The register 'result_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'result_reg[0]' is a constant and will be removed. (OPT-1206)
+  Processing 'full_adder_0'
+  Processing 'fm_step3'
+  Processing 'fm_step2'
+  Processing 'fm_step1'
+Information: The register 'temp_p_r1_10_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_10_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_10_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_10_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_10_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_10_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_10_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_10_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_10_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_10_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_10_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_2_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_2_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_2_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_2_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_2_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_2_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_2_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_2_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_2_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_2_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_2_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_3_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_3_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_3_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_3_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_3_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_3_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_3_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_3_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_3_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_3_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_3_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_4_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_4_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_4_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_4_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_4_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_4_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_4_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_4_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_4_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_4_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_4_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_5_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_5_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_5_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_5_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_5_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_5_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_5_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_5_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_5_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_5_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_5_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_6_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_6_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_6_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_6_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_6_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_6_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_6_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_6_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_6_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_6_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_6_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_7_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_7_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_7_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_7_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_7_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_7_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_7_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_7_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_7_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_7_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_7_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_8_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_8_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_8_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_8_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_8_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_8_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_8_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_8_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_8_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_8_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_8_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_9_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_9_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_9_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_9_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_9_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_9_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_9_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_9_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_9_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_9_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'temp_p_r1_9_reg[0]' is a constant and will be removed. (OPT-1206)
+  Processing 'float_multiplier'
+  Processing 'fp_mac'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'fa_step5_DW01_add_0'
+  Mapping 'DW_leftsh'
+Information: Added key list 'DesignWare' to design 'fa_step5'. (DDB-72)
+  Processing 'fa_step5_DW01_sub_0'
+  Processing 'fa_step5_DW01_inc_0'
+  Processing 'fa_step5_DW01_inc_1'
+  Mapping 'fa_step1_DW_cmp_0'
+  Mapping 'DW_rightsh'
+  Mapping 'DW_rightsh'
+  Processing 'fa_step1_DW01_sub_0'
+  Mapping 'fa_step1_DW_cmp_1'
+  Mapping 'DW_leftsh'
+Information: Added key list 'DesignWare' to design 'fm_step4'. (DDB-72)
+  Processing 'fm_step4_DW01_sub_0'
+  Processing 'fm_step1_DW01_add_0'
+  Processing 'fm_step1_DW01_add_1'
+  Processing 'fa_step5_DW01_add_1'
+  Processing 'fa_step5_DW01_sub_1'
+  Processing 'fm_step4_DW01_add_0'
+  Processing 'fm_step4_DW01_sub_1'
+  Processing 'fa_step1_DW01_inc_0'
+  Processing 'fa_step1_DW01_sub_1'
+  Processing 'fa_step1_DW01_inc_1'
+  Processing 'fa_step1_DW01_sub_2'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:07   23159.9  18867.27  207861.9 3589458.0                          
+    0:00:07   23159.9  18867.27  207861.9 3589458.0                          
+    0:00:07   23159.9  18867.27  207861.9 3589458.0                          
+    0:00:07   23159.6  18867.27  207861.9 3589458.0                          
+    0:00:08   23159.6  18867.27  207860.7 3589458.0                          
+    0:00:08   21674.4      0.00       0.0       0.0                          
+    0:00:08   21574.5      0.00       0.0       0.0                          
+    0:00:08   21574.5      0.00       0.0       0.0                          
+    0:00:08   21574.5      0.00       0.0       0.0                          
+    0:00:08   21574.5      0.00       0.0       0.0                          
+    0:00:08   21574.5      0.00       0.0       0.0                          
+    0:00:08   21574.5      0.00       0.0       0.0                          
+    0:00:08   21574.5      0.00       0.0       0.0                          
+    0:00:08   21574.5      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:08   21574.5      0.00       0.0       0.0                          
+    0:00:08   21574.5      0.00       0.0       0.0                          
+    0:00:09   21574.5      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:09   21574.5      0.00       0.0       0.0                          
+    0:00:09   21574.5      0.00       0.0       0.0                          
+    0:00:09   21304.1      0.00       0.0       0.0                          
+    0:00:09   21237.5      0.00       0.0       0.0                          
+    0:00:09   21204.8      0.00       0.0       0.0                          
+    0:00:09   21189.5      0.00       0.0       0.0                          
+    0:00:09   21179.3      0.00       0.0       0.0                          
+    0:00:09   21173.0      0.00       0.0       0.0                          
+    0:00:09   21173.0      0.00       0.0       0.0                          
+    0:00:09   21173.0      0.00       0.0       0.0                          
+    0:00:10   21062.4      0.00       0.0       0.0                          
+    0:00:10   21062.4      0.00       0.0       0.0                          
+    0:00:10   21062.4      0.00       0.0       0.0                          
+    0:00:10   21062.4      0.00       0.0       0.0                          
+    0:00:10   21062.4      0.00       0.0       0.0                          
+    0:00:10   21062.4      0.00       0.0       0.0                          
+    0:00:10   21031.7      0.00       0.0       0.0                          
+    0:00:11   21020.0      0.00       0.0       0.0                          
+    0:00:11   21020.0      0.00       0.0       0.0                          
+    0:00:11   21020.0      0.00       0.0       0.0                          
+    0:00:11   21020.0      0.00       0.0       0.0                          
+    0:00:11   21020.0      0.00       0.0       0.0                          
+    0:00:11   21020.0      0.00       0.0       0.0                          
+    0:00:11   21020.0      0.00       0.0       0.0                          
+    0:00:11   21020.0      0.00       0.0       0.0                          
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'fp_mac' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'SB1/loop_buf[1].TB1/clock': 1924 load(s), 1 driver(s)
+1

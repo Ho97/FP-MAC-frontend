@@ -1,0 +1,831 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                Version O-2018.06-SP4 for linux64 - Nov 27, 2018
+
+                    Copyright (c) 1988 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+
+
+I am ready...
+
+
+==================================================================
+
+Library Settings:
+search_path:             . /data/SYNOPSYS/syn/2018.06-SP4/libraries/syn /data/SYNOPSYS/syn/2018.06-SP4/minpower/syn /data/SYNOPSYS/syn/2018.06-SP4/dw/syn_ver /data/SYNOPSYS/syn/2018.06-SP4/dw/sim_ver
+link_library:             * your_library.db 
+target_library:          your_library.db
+symbol_library:          your_library.sdb
+mw_reference_library:    
+mw_design_library:       
+
+==================================================================
+
+I am ready...
+
+Initializing gui preferences from file  /home/capstone9/.synopsys_dv_prefs.tcl
+#define_design_lib WORK -path “work”
+source rm_setup/lib_setup.tcl
+*  saed32rvt_ff1p16vn40c.db saed32rvt_ss0p95v125c.db   dw_foundation.sldb
+# load & elaborate design 
+analyze -library WORK -format verilog ../RTL/B_Cell.v
+Running PRESTO HDLC
+Compiling source file ../RTL/B_Cell.v
+Presto compilation completed successfully.
+Loading db file '/data/SYNOPSYS/lib/32nm/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ff1p16vn40c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Loading db file '/data/SYNOPSYS/lib/32nm/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db'
+Loading db file '/data/SYNOPSYS/syn/2018.06-SP4/libraries/syn/dw_foundation.sldb'
+1
+elaborate -architecture verilog -library WORK B_Cell
+Loading db file '/data/SYNOPSYS/syn/2018.06-SP4/libraries/syn/gtech.db'
+Loading db file '/data/SYNOPSYS/syn/2018.06-SP4/libraries/syn/standard.sldb'
+  Loading link library 'saed32rvt_ff1p16vn40c'
+  Loading link library 'saed32rvt_ss0p95v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'B_Cell'.
+1
+analyze -library WORK -format verilog ../RTL/G_Cell.v
+Running PRESTO HDLC
+Compiling source file ../RTL/G_Cell.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK G_Cell
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'G_Cell'.
+1
+analyze -library WORK -format verilog ../RTL/sign_determine.v
+Running PRESTO HDLC
+Compiling source file ../RTL/sign_determine.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK sign_determine
+Running PRESTO HDLC
+Warning:  ../RTL/sign_determine.v:13: signed to unsigned assignment occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine sign_determine line 8 in file
+		'../RTL/sign_determine.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_sign_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'sign_determine'.
+1
+analyze -library WORK -format verilog ../RTL/ex_adder.v
+Running PRESTO HDLC
+Compiling source file ../RTL/ex_adder.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK ex_adder
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine ex_adder line 9 in file
+		'../RTL/ex_adder.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     out_ex_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'ex_adder'.
+1
+analyze -library WORK -format verilog ../RTL/ex_comparison.v
+Running PRESTO HDLC
+Compiling source file ../RTL/ex_comparison.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK ex_comparison
+Running PRESTO HDLC
+Warning:  ../RTL/ex_comparison.v:7: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'ex_comparison'.
+1
+analyze -library WORK -format verilog ../RTL/fr_adder_pre.v
+Running PRESTO HDLC
+Compiling source file ../RTL/fr_adder_pre.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK fr_adder_pre
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine fr_adder_pre line 25 in file
+		'../RTL/fr_adder_pre.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   out_input1_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   out_input2_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    out_sign_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'fr_adder_pre'.
+1
+analyze -library WORK -format verilog ../RTL/fr_adder_prepare.v
+Running PRESTO HDLC
+Compiling source file ../RTL/fr_adder_prepare.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK fr_adder_prepare
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine fr_adder_prepare line 19 in file
+		'../RTL/fr_adder_prepare.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       G0_reg        | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       P0_reg        | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  out_out_sign_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'fr_adder_prepare'.
+1
+analyze -library WORK -format verilog ../RTL/fr_firstone.v
+Running PRESTO HDLC
+Compiling source file ../RTL/fr_firstone.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK fr_firstone
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine fr_firstone line 8 in file
+		'../RTL/fr_firstone.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      count_reg      | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      count_reg      | Flip-flop |   4   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'fr_firstone'.
+1
+analyze -library WORK -format verilog ../RTL/fr_normalize.v
+Running PRESTO HDLC
+Compiling source file ../RTL/fr_normalize.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK fr_normalize
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine fr_normalize line 12 in file
+		'../RTL/fr_normalize.v'.
+===================================================================================
+|      Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===================================================================================
+| nor_out_significand_reg | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  nor_out_exponent_reg   | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===================================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'fr_normalize'.
+1
+analyze -library WORK -format verilog ../RTL/fr_round.v
+Running PRESTO HDLC
+Compiling source file ../RTL/fr_round.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK fr_round
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine fr_round line 18 in file
+		'../RTL/fr_round.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  out_exponent_reg   | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+| out_significand_reg | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'fr_round'.
+1
+analyze -library WORK -format verilog ../RTL/fr_shifter.v
+Running PRESTO HDLC
+Compiling source file ../RTL/fr_shifter.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK fr_shifter
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine fr_shifter line 17 in file
+		'../RTL/fr_shifter.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     out_in1_reg     | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     out_in2_reg     | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'fr_shifter'.
+1
+analyze -library WORK -format verilog ../RTL/KS_step1.v
+Running PRESTO HDLC
+Compiling source file ../RTL/KS_step1.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK KS_step1
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine KS_step1 line 36 in file
+		'../RTL/KS_step1.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     out_P0_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     out_GG_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    out_sign_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     out_G1_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     out_P1_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'KS_step1'.
+1
+analyze -library WORK -format verilog ../RTL/KS_step2.v
+Running PRESTO HDLC
+Compiling source file ../RTL/KS_step2.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK KS_step2
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine KS_step2 line 42 in file
+		'../RTL/KS_step2.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     out_GG_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     out_P0_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    out_sign_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     out_G2_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     out_P2_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'KS_step2'.
+1
+analyze -library WORK -format verilog ../RTL/KS_step3.v
+Running PRESTO HDLC
+Compiling source file ../RTL/KS_step3.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK KS_step3
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine KS_step3 line 40 in file
+		'../RTL/KS_step3.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     out_P0_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     out_GG_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    out_sign_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     out_G3_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     out_P3_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'KS_step3'.
+1
+analyze -library WORK -format verilog ../RTL/KS_step4.v
+Running PRESTO HDLC
+Compiling source file ../RTL/KS_step4.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK KS_step4
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine KS_step4 line 41 in file
+		'../RTL/KS_step4.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     out_P0_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     out_GG_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    out_sign_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     out_G4_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     out_P4_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'KS_step4'.
+1
+analyze -library WORK -format verilog ../RTL/KS_step5.v
+Running PRESTO HDLC
+Compiling source file ../RTL/KS_step5.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK KS_step5
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine KS_step5 line 27 in file
+		'../RTL/KS_step5.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     out_P0_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     out_GG_reg      | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    out_sign_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'KS_step5'.
+1
+analyze -library WORK -format verilog ../RTL/KS_step6.v
+Running PRESTO HDLC
+Compiling source file ../RTL/KS_step6.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK KS_step6
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine KS_step6 line 21 in file
+		'../RTL/KS_step6.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       Sum_reg       | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      Cout_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    out_sign_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'KS_step6'.
+1
+analyze -library WORK -format verilog ../RTL/result_adder_status.v
+Running PRESTO HDLC
+Compiling source file ../RTL/result_adder_status.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK result_adder_status
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine result_adder_status line 10 in file
+		'../RTL/result_adder_status.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| fp_adder_output_reg | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'result_adder_status'.
+1
+analyze -library WORK -format verilog ../RTL/result_status.v
+Running PRESTO HDLC
+Compiling source file ../RTL/result_status.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK result_status
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine result_status line 10 in file
+		'../RTL/result_status.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   fp_mul_out_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'result_status'.
+1
+analyze -library WORK -format verilog ../RTL/sg_firstone.v
+Running PRESTO HDLC
+Compiling source file ../RTL/sg_firstone.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK sg_firstone
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine sg_firstone line 8 in file
+		'../RTL/sg_firstone.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_count_reg    | Flip-flop |   3   |  Y  | N  | N  | Y  | N  | N  | N  |
+|    out_count_reg    | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'sg_firstone'.
+1
+analyze -library WORK -format verilog ../RTL/sg_multiplier.v
+Running PRESTO HDLC
+Compiling source file ../RTL/sg_multiplier.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK sg_multiplier
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine sg_multiplier line 44 in file
+		'../RTL/sg_multiplier.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     temp_s_reg      | Flip-flop |  220  |  Y  | N  | Y  | N  | N  | N  | N  |
+|     temp_p_reg      | Flip-flop | 1210  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'sg_multiplier'.
+Information: Building the design 'full_adder'. (HDL-193)
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../RTL/sg_normalizer.v
+Running PRESTO HDLC
+Compiling source file ../RTL/sg_normalizer.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK sg_normalizer
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine sg_normalizer line 13 in file
+		'../RTL/sg_normalizer.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     out_ex_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   sig_nor_out_reg   | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'sg_normalizer'.
+1
+analyze -library WORK -format verilog ../RTL/step1_status.v
+Running PRESTO HDLC
+Compiling source file ../RTL/step1_status.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK step1_status
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine step1_status line 8 in file
+		'../RTL/step1_status.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| out_significand_A_reg | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+| out_significand_B_reg | Flip-flop |  11   |  Y  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'step1_status'.
+1
+analyze -library WORK -format verilog ../RTL/step2_status.v
+Running PRESTO HDLC
+Compiling source file ../RTL/step2_status.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK step2_status
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'step2_status'.
+Information: Building the design 'temporary_box_mul'. (HDL-193)
+
+Inferred memory devices in process
+	in routine temporary_box_mul line 41 in file
+		'../RTL/step2_status.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_sign_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     out_ex_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../RTL/step3_status.v
+Running PRESTO HDLC
+Compiling source file ../RTL/step3_status.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK step3_status
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine step3_status line 12 in file
+		'../RTL/step3_status.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| out_ex_add_out_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+| out_sig_mul_out_reg | Flip-flop |  22   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  out_out_sign_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'step3_status'.
+1
+analyze -library WORK -format verilog ../RTL/step4_status.v
+Running PRESTO HDLC
+Compiling source file ../RTL/step4_status.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK step4_status
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine step4_status line 8 in file
+		'../RTL/step4_status.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  out_out_sign_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'step4_status'.
+1
+analyze -library WORK -format verilog ../RTL/step1_adder_status.v
+Running PRESTO HDLC
+Compiling source file ../RTL/step1_adder_status.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK step1_adder_status
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine step1_adder_status line 12 in file
+		'../RTL/step1_adder_status.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    sign_in2_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    sign_in1_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   current_ex_reg    | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'step1_adder_status'.
+1
+analyze -library WORK -format verilog ../RTL/step2_adder_status.v
+Running PRESTO HDLC
+Compiling source file ../RTL/step2_adder_status.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK step2_adder_status
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'step2_adder_status'.
+Information: Building the design 'temporary_box_add'. (HDL-193)
+
+Inferred memory devices in process
+	in routine temporary_box_add line 45 in file
+		'../RTL/step2_adder_status.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_sign2_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     out_ex_reg      | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    out_sign1_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../RTL/step3_adder_status.v
+Running PRESTO HDLC
+Compiling source file ../RTL/step3_adder_status.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK step3_adder_status
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine step3_adder_status line 15 in file
+		'../RTL/step3_adder_status.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| out_adder_out_sign_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   out_current_ex_reg   | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   out_adder_out_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    out_ov_sign_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+==================================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'step3_adder_status'.
+1
+analyze -library WORK -format verilog ../RTL/step4_adder_status.v
+Running PRESTO HDLC
+Compiling source file ../RTL/step4_adder_status.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK step4_adder_status
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine step4_adder_status line 10 in file
+		'../RTL/step4_adder_status.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_sign_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   out_ov_sign_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'step4_adder_status'.
+1
+analyze -library WORK -format verilog ../RTL/step5_adder_status.v
+Running PRESTO HDLC
+Compiling source file ../RTL/step5_adder_status.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK step5_adder_status
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine step5_adder_status line 8 in file
+		'../RTL/step5_adder_status.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_sign_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'step5_adder_status'.
+1
+analyze -library WORK -format verilog ../RTL/sum_out_buffer.v
+Running PRESTO HDLC
+Compiling source file ../RTL/sum_out_buffer.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK sum_out_buffer
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'sum_out_buffer'.
+Information: Building the design 'temporary_box'. (HDL-193)
+
+Inferred memory devices in process
+	in routine temporary_box line 36 in file
+		'../RTL/sum_out_buffer.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_data_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1
+analyze -library WORK -format verilog ../RTL/float_adder.v
+Running PRESTO HDLC
+Compiling source file ../RTL/float_adder.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK float_adder
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'float_adder'.
+Information: Building the design 'fr_adder'. (HDL-193)
+Warning: Cannot find the design 'fr_adder' in the library 'WORK'. (LBR-1)
+Warning: Design 'float_adder' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+1
+analyze -library WORK -format verilog ../RTL/float_multiplier.v
+Running PRESTO HDLC
+Compiling source file ../RTL/float_multiplier.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK float_multiplier
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'float_multiplier'.
+1
+analyze -library WORK -format verilog ../RTL/fr_adder.v
+Running PRESTO HDLC
+Compiling source file ../RTL/fr_adder.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK fr_adder
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'fr_adder'.
+1
+analyze -library WORK -format verilog ../RTL/fp_mac.v
+Running PRESTO HDLC
+Compiling source file ../RTL/fp_mac.v
+Presto compilation completed successfully.
+1
+elaborate -architecture verilog -library WORK fp_mac
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'fp_mac'.
+1
+current_design fp_mac
+Current design is 'fp_mac'.
+{fp_mac}
+check_design > reports/check_design.rpt
+# design constraints
+set INPUTPORT [remove_from_collection [all_inputs] [get_ports "CLK RESETn"]]
+{A[15] A[14] A[13] A[12] A[11] A[10] A[9] A[8] A[7] A[6] A[5] A[4] A[3] A[2] A[1] A[0] B[15] B[14] B[13] B[12] B[11] B[10] B[9] B[8] B[7] B[6] B[5] B[4] B[3] B[2] B[1] B[0] C[31] C[30] C[29] C[28] C[27] C[26] C[25] C[24] C[23] C[22] C[21] C[20] C[19] C[18] C[17] C[16] C[15] C[14] C[13] C[12] C[11] C[10] C[9] C[8] C[7] C[6] C[5] C[4] C[3] C[2] C[1] C[0]}
+set OUTPUTPORT [all_outputs]
+{Y[31] Y[30] Y[29] Y[28] Y[27] Y[26] Y[25] Y[24] Y[23] Y[22] Y[21] Y[20] Y[19] Y[18] Y[17] Y[16] Y[15] Y[14] Y[13] Y[12] Y[11] Y[10] Y[9] Y[8] Y[7] Y[6] Y[5] Y[4] Y[3] Y[2] Y[1] Y[0]}
+set_load [load_of saed32rvt_ff1p16vn40c/NBUFFX2_RVT/A] $OUTPUTPORT
+1
+set_driving_cell -library saed32rvt_ff1p16vn40c -lib_cell NBUFFX2_RVT -pin Y -no_design_rule $INPUTPORT
+1
+# timing constraints
+set_operating_conditions ff1p16vn40c -library saed32rvt_ff1p16vn40c
+Using operating conditions 'ff1p16vn40c' found in library 'saed32rvt_ff1p16vn40c'.
+1
+create_clock -period 5 -name MAIN_CLOCK [get_ports CLK]
+1
+set_clock_uncertainty 0.5 [get_clocks MAIN_CLOCK]
+1
+set_input_delay -clock MAIN_CLOCK -max 2.0 [remove_from_collection [all_inputs] CLK ]
+1
+set_input_delay -clock MAIN_CLOCK -min 0.1 [remove_from_collection [all_inputs] CLK ]
+1
+set_output_delay -clock MAIN_CLOCK -max 2.0 [all_outputs]
+1
+set_output_delay -clock MAIN_CLOCK -min -0.1 [all_outputs]
+1
+# synthesis constraints
+set_max_area 0
+1
+report_qor > reports/qor.rpt
+# compile (synthesis)
+compile -area_effort medium -map_effort high > reports/compile.rpt
+# report
+report_area > reports/synth_area.rpt
+report_design > reports/synth_design.rpt
+report_cell > reports/synth_cells.rpt
+report_qor > reports/synth_qor.rpt
+report_resources > reports/synth_resources.rpt
+report_timing -max_paths 10 > reports/synth_timing.rpt
+report_power -analysis_effort medium > reports/synth_power.rpt
+# save results
+write -f ddc -hierarchy -output results/fp_mac.ddc
+Writing ddc file 'results/fp_mac.ddc'.
+1
+write -hierarchy -format verilog -output results/fp_mac.mapped.v
+Writing verilog file '/home/capstone9/capstone/lab4_front-end/SYN/results/fp_mac.mapped.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 2 nets to module float_multiplier using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 86 nets to module fr_adder using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 3 nets to module float_adder using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+write_sdc results/fp_mac.sdc -version 2.1
+1
+write_sdf results/fp_mac.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/capstone9/capstone/lab4_front-end/SYN/results/fp_mac.sdf'. (WT-3)
+1
+1
+Warning: Cannot use command line editor for terminal type 'xterm'.  (UI-74)
+dc_shell> 
+Thank you...

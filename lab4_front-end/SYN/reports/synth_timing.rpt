@@ -1,0 +1,477 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : fp_mac
+Version: O-2018.06-SP4
+Date   : Mon Dec 19 02:52:38 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ff1p16vn40c   Library: saed32rvt_ff1p16vn40c
+Wire Load Model Mode: enclosed
+
+  Startpoint: B[10] (input port clocked by MAIN_CLOCK)
+  Endpoint: FM1/EA1/out_ex_reg[7]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp_mac             35000                 saed32rvt_ff1p16vn40c
+  ex_adder           ForQA                 saed32rvt_ff1p16vn40c
+  ex_adder_DW01_add_0
+                     ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  B[10] (in)                                              0.00       2.00 f
+  FM1/B[10] (float_multiplier)                            0.00       2.00 f
+  FM1/EA1/ex_B[0] (ex_adder)                              0.00       2.00 f
+  FM1/EA1/U12/Y (XOR2X1_RVT)                              0.04       2.04 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/B[1] (ex_adder_DW01_add_0)
+                                                          0.00       2.04 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_1/CO (FADDX1_RVT)
+                                                          0.03       2.07 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_2/CO (FADDX1_RVT)
+                                                          0.03       2.11 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_3/CO (FADDX1_RVT)
+                                                          0.03       2.14 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_4/CO (FADDX1_RVT)
+                                                          0.03       2.17 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U6/Y (AND2X1_RVT)
+                                                          0.02       2.19 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U4/Y (NAND2X0_RVT)
+                                                          0.01       2.20 f
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U3/Y (XNOR2X1_RVT)
+                                                          0.04       2.24 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/SUM[7] (ex_adder_DW01_add_0)
+                                                          0.00       2.24 r
+  FM1/EA1/out_ex_reg[7]/D (DFFARX1_RVT)                   0.00       2.24 r
+  data arrival time                                                  2.24
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  FM1/EA1/out_ex_reg[7]/CLK (DFFARX1_RVT)                 0.00       4.50 r
+  library setup time                                     -0.02       4.48
+  data required time                                                 4.48
+  --------------------------------------------------------------------------
+  data required time                                                 4.48
+  data arrival time                                                 -2.24
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.25
+
+
+  Startpoint: B[10] (input port clocked by MAIN_CLOCK)
+  Endpoint: FM1/EA1/out_ex_reg[6]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp_mac             35000                 saed32rvt_ff1p16vn40c
+  ex_adder           ForQA                 saed32rvt_ff1p16vn40c
+  ex_adder_DW01_add_0
+                     ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  B[10] (in)                                              0.00       2.00 f
+  FM1/B[10] (float_multiplier)                            0.00       2.00 f
+  FM1/EA1/ex_B[0] (ex_adder)                              0.00       2.00 f
+  FM1/EA1/U12/Y (XOR2X1_RVT)                              0.04       2.04 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/B[1] (ex_adder_DW01_add_0)
+                                                          0.00       2.04 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_1/CO (FADDX1_RVT)
+                                                          0.03       2.07 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_2/CO (FADDX1_RVT)
+                                                          0.03       2.11 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_3/CO (FADDX1_RVT)
+                                                          0.03       2.14 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_4/CO (FADDX1_RVT)
+                                                          0.03       2.17 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U6/Y (AND2X1_RVT)
+                                                          0.02       2.19 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1/Y (XOR2X1_RVT)
+                                                          0.03       2.22 f
+  FM1/EA1/add_0_root_add_0_root_add_14_2/SUM[6] (ex_adder_DW01_add_0)
+                                                          0.00       2.22 f
+  FM1/EA1/out_ex_reg[6]/D (DFFARX1_RVT)                   0.00       2.22 f
+  data arrival time                                                  2.22
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  FM1/EA1/out_ex_reg[6]/CLK (DFFARX1_RVT)                 0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.22
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.27
+
+
+  Startpoint: B[10] (input port clocked by MAIN_CLOCK)
+  Endpoint: FM1/EA1/out_ex_reg[5]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp_mac             35000                 saed32rvt_ff1p16vn40c
+  ex_adder           ForQA                 saed32rvt_ff1p16vn40c
+  ex_adder_DW01_add_0
+                     ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  B[10] (in)                                              0.00       2.00 f
+  FM1/B[10] (float_multiplier)                            0.00       2.00 f
+  FM1/EA1/ex_B[0] (ex_adder)                              0.00       2.00 f
+  FM1/EA1/U12/Y (XOR2X1_RVT)                              0.04       2.04 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/B[1] (ex_adder_DW01_add_0)
+                                                          0.00       2.04 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_1/CO (FADDX1_RVT)
+                                                          0.03       2.07 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_2/CO (FADDX1_RVT)
+                                                          0.03       2.11 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_3/CO (FADDX1_RVT)
+                                                          0.03       2.14 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_4/CO (FADDX1_RVT)
+                                                          0.03       2.17 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U2/Y (XOR2X1_RVT)
+                                                          0.04       2.20 f
+  FM1/EA1/add_0_root_add_0_root_add_14_2/SUM[5] (ex_adder_DW01_add_0)
+                                                          0.00       2.20 f
+  FM1/EA1/out_ex_reg[5]/D (DFFARX1_RVT)                   0.00       2.20 f
+  data arrival time                                                  2.20
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  FM1/EA1/out_ex_reg[5]/CLK (DFFARX1_RVT)                 0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.20
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.29
+
+
+  Startpoint: B[10] (input port clocked by MAIN_CLOCK)
+  Endpoint: FM1/EA1/out_ex_reg[4]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp_mac             35000                 saed32rvt_ff1p16vn40c
+  ex_adder           ForQA                 saed32rvt_ff1p16vn40c
+  ex_adder_DW01_add_0
+                     ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  B[10] (in)                                              0.00       2.00 f
+  FM1/B[10] (float_multiplier)                            0.00       2.00 f
+  FM1/EA1/ex_B[0] (ex_adder)                              0.00       2.00 f
+  FM1/EA1/U12/Y (XOR2X1_RVT)                              0.04       2.04 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/B[1] (ex_adder_DW01_add_0)
+                                                          0.00       2.04 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_1/CO (FADDX1_RVT)
+                                                          0.03       2.07 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_2/CO (FADDX1_RVT)
+                                                          0.03       2.11 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_3/CO (FADDX1_RVT)
+                                                          0.03       2.14 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_4/S (FADDX1_RVT)
+                                                          0.04       2.18 f
+  FM1/EA1/add_0_root_add_0_root_add_14_2/SUM[4] (ex_adder_DW01_add_0)
+                                                          0.00       2.18 f
+  FM1/EA1/out_ex_reg[4]/D (DFFARX1_RVT)                   0.00       2.18 f
+  data arrival time                                                  2.18
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  FM1/EA1/out_ex_reg[4]/CLK (DFFARX1_RVT)                 0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.31
+
+
+  Startpoint: B[10] (input port clocked by MAIN_CLOCK)
+  Endpoint: FM1/EA1/out_ex_reg[3]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp_mac             35000                 saed32rvt_ff1p16vn40c
+  ex_adder           ForQA                 saed32rvt_ff1p16vn40c
+  ex_adder_DW01_add_0
+                     ForQA                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 f
+  B[10] (in)                                              0.00       2.00 f
+  FM1/B[10] (float_multiplier)                            0.00       2.00 f
+  FM1/EA1/ex_B[0] (ex_adder)                              0.00       2.00 f
+  FM1/EA1/U12/Y (XOR2X1_RVT)                              0.04       2.04 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/B[1] (ex_adder_DW01_add_0)
+                                                          0.00       2.04 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_1/CO (FADDX1_RVT)
+                                                          0.03       2.07 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_2/CO (FADDX1_RVT)
+                                                          0.03       2.11 r
+  FM1/EA1/add_0_root_add_0_root_add_14_2/U1_3/S (FADDX1_RVT)
+                                                          0.04       2.15 f
+  FM1/EA1/add_0_root_add_0_root_add_14_2/SUM[3] (ex_adder_DW01_add_0)
+                                                          0.00       2.15 f
+  FM1/EA1/out_ex_reg[3]/D (DFFARX1_RVT)                   0.00       2.15 f
+  data arrival time                                                  2.15
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  FM1/EA1/out_ex_reg[3]/CLK (DFFARX1_RVT)                 0.00       4.50 r
+  library setup time                                     -0.01       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -2.15
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.34
+
+
+  Startpoint: RESETn (input port clocked by MAIN_CLOCK)
+  Endpoint: FM1/SM1/temp_p_reg[2][3][8]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp_mac             35000                 saed32rvt_ff1p16vn40c
+  sg_multiplier      16000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  RESETn (in)                                             0.00       2.00 r
+  FM1/resetn (float_multiplier)                           0.00       2.00 r
+  FM1/SM1/resetn (sg_multiplier)                          0.00       2.00 r
+  FM1/SM1/U309/Y (INVX1_RVT)                              0.02       2.02 f
+  FM1/SM1/U274/Y (INVX1_RVT)                              0.01       2.03 r
+  FM1/SM1/U127/Y (INVX1_RVT)                              0.02       2.05 f
+  FM1/SM1/U87/Y (INVX1_RVT)                               0.04       2.09 r
+  FM1/SM1/U86/Y (AO22X1_RVT)                              0.03       2.12 r
+  FM1/SM1/temp_p_reg[2][3][8]/D (DFFX1_RVT)               0.00       2.12 r
+  data arrival time                                                  2.12
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  FM1/SM1/temp_p_reg[2][3][8]/CLK (DFFX1_RVT)             0.00       4.50 r
+  library setup time                                     -0.02       4.48
+  data required time                                                 4.48
+  --------------------------------------------------------------------------
+  data required time                                                 4.48
+  data arrival time                                                 -2.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.36
+
+
+  Startpoint: RESETn (input port clocked by MAIN_CLOCK)
+  Endpoint: FM1/SM1/temp_p_reg[2][3][7]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp_mac             35000                 saed32rvt_ff1p16vn40c
+  sg_multiplier      16000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  RESETn (in)                                             0.00       2.00 r
+  FM1/resetn (float_multiplier)                           0.00       2.00 r
+  FM1/SM1/resetn (sg_multiplier)                          0.00       2.00 r
+  FM1/SM1/U309/Y (INVX1_RVT)                              0.02       2.02 f
+  FM1/SM1/U274/Y (INVX1_RVT)                              0.01       2.03 r
+  FM1/SM1/U129/Y (INVX1_RVT)                              0.02       2.05 f
+  FM1/SM1/U94/Y (INVX1_RVT)                               0.04       2.09 r
+  FM1/SM1/U81/Y (AO22X1_RVT)                              0.03       2.12 r
+  FM1/SM1/temp_p_reg[2][3][7]/D (DFFX1_RVT)               0.00       2.12 r
+  data arrival time                                                  2.12
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  FM1/SM1/temp_p_reg[2][3][7]/CLK (DFFX1_RVT)             0.00       4.50 r
+  library setup time                                     -0.02       4.48
+  data required time                                                 4.48
+  --------------------------------------------------------------------------
+  data required time                                                 4.48
+  data arrival time                                                 -2.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.36
+
+
+  Startpoint: RESETn (input port clocked by MAIN_CLOCK)
+  Endpoint: FM1/SM1/temp_p_reg[2][3][6]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp_mac             35000                 saed32rvt_ff1p16vn40c
+  sg_multiplier      16000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  RESETn (in)                                             0.00       2.00 r
+  FM1/resetn (float_multiplier)                           0.00       2.00 r
+  FM1/SM1/resetn (sg_multiplier)                          0.00       2.00 r
+  FM1/SM1/U309/Y (INVX1_RVT)                              0.02       2.02 f
+  FM1/SM1/U274/Y (INVX1_RVT)                              0.01       2.03 r
+  FM1/SM1/U127/Y (INVX1_RVT)                              0.02       2.05 f
+  FM1/SM1/U89/Y (INVX1_RVT)                               0.04       2.09 r
+  FM1/SM1/U76/Y (AO22X1_RVT)                              0.03       2.12 r
+  FM1/SM1/temp_p_reg[2][3][6]/D (DFFX1_RVT)               0.00       2.12 r
+  data arrival time                                                  2.12
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  FM1/SM1/temp_p_reg[2][3][6]/CLK (DFFX1_RVT)             0.00       4.50 r
+  library setup time                                     -0.02       4.48
+  data required time                                                 4.48
+  --------------------------------------------------------------------------
+  data required time                                                 4.48
+  data arrival time                                                 -2.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.36
+
+
+  Startpoint: RESETn (input port clocked by MAIN_CLOCK)
+  Endpoint: FM1/SM1/temp_p_reg[2][3][5]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp_mac             35000                 saed32rvt_ff1p16vn40c
+  sg_multiplier      16000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  RESETn (in)                                             0.00       2.00 r
+  FM1/resetn (float_multiplier)                           0.00       2.00 r
+  FM1/SM1/resetn (sg_multiplier)                          0.00       2.00 r
+  FM1/SM1/U309/Y (INVX1_RVT)                              0.02       2.02 f
+  FM1/SM1/U274/Y (INVX1_RVT)                              0.01       2.03 r
+  FM1/SM1/U127/Y (INVX1_RVT)                              0.02       2.05 f
+  FM1/SM1/U109/Y (INVX1_RVT)                              0.04       2.09 r
+  FM1/SM1/U71/Y (AO22X1_RVT)                              0.03       2.12 r
+  FM1/SM1/temp_p_reg[2][3][5]/D (DFFX1_RVT)               0.00       2.12 r
+  data arrival time                                                  2.12
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  FM1/SM1/temp_p_reg[2][3][5]/CLK (DFFX1_RVT)             0.00       4.50 r
+  library setup time                                     -0.02       4.48
+  data required time                                                 4.48
+  --------------------------------------------------------------------------
+  data required time                                                 4.48
+  data arrival time                                                 -2.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.36
+
+
+  Startpoint: RESETn (input port clocked by MAIN_CLOCK)
+  Endpoint: FM1/SM1/temp_p_reg[2][3][4]
+            (rising edge-triggered flip-flop clocked by MAIN_CLOCK)
+  Path Group: MAIN_CLOCK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fp_mac             35000                 saed32rvt_ff1p16vn40c
+  sg_multiplier      16000                 saed32rvt_ff1p16vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MAIN_CLOCK (rise edge)                            0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    2.00       2.00 r
+  RESETn (in)                                             0.00       2.00 r
+  FM1/resetn (float_multiplier)                           0.00       2.00 r
+  FM1/SM1/resetn (sg_multiplier)                          0.00       2.00 r
+  FM1/SM1/U309/Y (INVX1_RVT)                              0.02       2.02 f
+  FM1/SM1/U274/Y (INVX1_RVT)                              0.01       2.03 r
+  FM1/SM1/U127/Y (INVX1_RVT)                              0.02       2.05 f
+  FM1/SM1/U87/Y (INVX1_RVT)                               0.04       2.09 r
+  FM1/SM1/U66/Y (AO22X1_RVT)                              0.03       2.12 r
+  FM1/SM1/temp_p_reg[2][3][4]/D (DFFX1_RVT)               0.00       2.12 r
+  data arrival time                                                  2.12
+
+  clock MAIN_CLOCK (rise edge)                            5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.50       4.50
+  FM1/SM1/temp_p_reg[2][3][4]/CLK (DFFX1_RVT)             0.00       4.50 r
+  library setup time                                     -0.02       4.48
+  data required time                                                 4.48
+  --------------------------------------------------------------------------
+  data required time                                                 4.48
+  data arrival time                                                 -2.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.36
+
+
+1

@@ -1,0 +1,200 @@
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.4 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.4 |     *     |
+============================================================================
+
+
+Information: There are 103 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition ff1p16vn40c set on design fp_mac has different process,
+voltage and temperatures parameters than the parameters at which target library 
+saed32rvt_ss0p95v125c is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'mac_step5'
+  Processing 'G_Cell_0'
+  Processing 'B_Cell_0'
+  Processing 'mac_step4'
+  Processing 'mac_step3'
+Information: Added key list 'DesignWare' to design 'mac_step3'. (DDB-72)
+  Processing 'full_adder_0'
+  Processing 'mac_step2'
+  Processing 'mac_step1'
+Information: The register 'p_r4_9_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_9_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_9_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_9_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_9_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_9_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_9_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_9_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_9_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_9_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_9_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_10_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_10_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_10_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_10_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_10_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_10_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_10_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_10_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_10_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_10_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_10_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_5_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_5_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_5_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_5_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_5_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_5_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_5_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_5_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_5_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_5_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_5_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_6_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_6_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_6_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_6_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_6_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_6_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_6_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_6_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_6_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_6_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_6_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_7_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_7_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_7_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_7_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_7_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_7_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_7_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_7_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_7_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_7_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_7_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_8_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_8_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_8_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_8_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_8_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_8_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_8_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_8_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_8_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_8_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'p_r4_8_reg[0]' is a constant and will be removed. (OPT-1206)
+  Processing 'fp_mac'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'mac_step5_DW01_add_0'
+  Mapping 'DW_leftsh'
+Information: Added key list 'DesignWare' to design 'mac_step5'. (DDB-72)
+  Processing 'mac_step5_DW01_sub_0'
+  Processing 'mac_step5_DW01_inc_0'
+  Processing 'mac_step5_DW01_inc_1'
+  Mapping 'mac_step3_DW_cmp_0'
+  Mapping 'DW_rightsh'
+  Mapping 'DW_rightsh'
+  Processing 'mac_step3_DW01_sub_0'
+  Mapping 'mac_step3_DW_cmp_1'
+  Mapping 'DW_leftsh'
+  Processing 'mac_step3_DW01_sub_1'
+  Processing 'mac_step1_DW01_add_0'
+  Processing 'mac_step1_DW01_add_1'
+  Processing 'mac_step5_DW01_add_1'
+  Processing 'mac_step5_DW01_sub_1'
+  Processing 'mac_step3_DW01_add_0'
+  Processing 'mac_step3_DW01_sub_2'
+  Processing 'mac_step3_DW01_inc_0'
+  Processing 'mac_step3_DW01_sub_3'
+  Processing 'mac_step3_DW01_inc_1'
+  Processing 'mac_step3_DW01_sub_4'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:05   11385.9      0.96       6.3  269046.8                          
+    0:00:05   11385.9      0.96       6.3  269046.8                          
+    0:00:05   11385.9      0.96       6.3  269046.8                          
+    0:00:05   11385.9      0.96       6.3  269046.8                          
+    0:00:05   11385.9      0.96      13.6  269046.8                          
+    0:00:06   10207.9      3.93     184.8       0.0                          
+    0:00:06   10153.3      0.00       0.0       1.5                          
+    0:00:06   10103.5      0.00       0.0       0.0                          
+    0:00:06   10103.5      0.00       0.0       0.0                          
+    0:00:06   10103.5      0.00       0.0       0.0                          
+    0:00:06   10103.5      0.00       0.0       0.0                          
+    0:00:06   10103.5      0.00       0.0       0.0                          
+    0:00:06   10103.5      0.00       0.0       0.0                          
+    0:00:06   10103.5      0.00       0.0       0.0                          
+    0:00:06   10103.5      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06   10103.5      0.00       0.0       0.0                          
+    0:00:06   10103.5      0.00       0.0       0.0                          
+    0:00:06   10103.5      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:06   10103.5      0.00       0.0       0.0                          
+    0:00:06   10103.5      0.00       0.0       0.0                          
+    0:00:06    9896.1      0.00       0.0       0.0                          
+    0:00:06    9769.3      0.00       0.0       0.0                          
+    0:00:06    9689.7      0.00       0.0       0.0                          
+    0:00:06    9666.1      0.00       0.0       0.0                          
+    0:00:06    9656.5      0.00       0.0       0.0                          
+    0:00:06    9656.5      0.00       0.0       0.0                          
+    0:00:06    9656.5      0.00       0.0       0.0                          
+    0:00:06    9643.2      0.00       0.0       0.0                          
+    0:00:06    9643.2      0.00       0.0       0.0                          
+    0:00:06    9643.2      0.00       0.0       0.0                          
+    0:00:06    9643.2      0.00       0.0       0.0                          
+    0:00:06    9643.2      0.00       0.0       0.0                          
+    0:00:06    9643.2      0.00       0.0       0.0                          
+    0:00:06    9603.3      0.00       0.0       0.0                          
+    0:00:07    9603.3      0.00       0.0       0.0                          
+    0:00:07    9603.3      0.00       0.0       0.0                          
+    0:00:07    9603.3      0.00       0.0       0.0                          
+    0:00:07    9603.3      0.00       0.0       0.0                          
+    0:00:07    9603.3      0.00       0.0       0.0                          
+    0:00:07    9603.3      0.00       0.0       0.0                          
+    0:00:07    9603.3      0.00       0.0       0.0                          
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1

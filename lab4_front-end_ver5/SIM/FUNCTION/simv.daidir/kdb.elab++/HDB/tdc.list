@@ -1,0 +1,7 @@
+../../RTL/mac_step5.v
+../../RTL/mac_step1.v
+../../RTL/fp_mac.v
+../../RTL/mac_step2.v
+../TESTBENCH/tb_fp_mac.v
+../../RTL/mac_step3.v
+../../RTL/mac_step4.v
